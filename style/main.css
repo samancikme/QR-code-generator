@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Montserrat", sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(57, 57, 71, 0.723);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .input-url{
+    width: 300px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1)
+                0 -4px -30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.3px);
+    -webkit-backdrop-filter: blur(7.3px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .input-url form input {
+    font-size: 14px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: 1px solid rgb(0, 255, 0);
+    outline: none;
+}
+
+
+.container .input-url form .btn{
+    font-size: 14px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.759);
+    padding: 10px 10px;
+    border-radius: 20px;
+    background-color: rgb(53, 238, 255);
+    border: 1px solid transparent;
+    transition: all 0.2s ease-in-out;
+}
+
+.container .input-url form .btn:hover{
+    background-color:  rgba(53, 238, 255, 0.8);
+}
+
+.container .input-url form .btn:active{
+    transform: scale(0.95);
+}
+
+
+.container .qr-box {
+    display: none;
+    flex-direction: column;
+}
+
+.container .qr-box .qr-img{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    width: 300px;
+    height: 300px;
+    background: rgba(54, 54, 54, 0.497);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.3px);
+    -webkit-backdrop-filter: blur(7.3px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.container .qr-box .qr-img img{
+    width: 90%;
+    object-fit: contain;
+}
+
+.container .qr-box .icon{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    border-radius: 20px;
+    display: flex;
+    padding: 15px;
+}
+
+.container .qr-box .icon i{
+    font-size: 30px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.container .qr-box .icon p{
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.container .qr-box .icon .link , .download{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.container .qr-box .icon .link , .download{
+    width: 80px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+
+.container .qr-box .icon i:active{
+    transform: scale(0.95);
+}
+
+
